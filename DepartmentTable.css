@@ -1,0 +1,53 @@
+/* components/DepartmentTable.css */
+
+.table-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.department-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.department-table th,
+.department-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.department-table thead {
+  background-color: #f9f9f9;
+}
+
+.department-table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 6px;
+  margin: 0 4px;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.icon-btn.edit {
+  color: #5e3b2c;
+}
+
+.icon-btn.delete {
+  color: #dc2626;
+}

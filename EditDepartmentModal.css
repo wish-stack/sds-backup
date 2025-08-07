@@ -1,0 +1,99 @@
+/* components/EditDepartmentModal.css */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  background-color: #5e3b2c;
+  color: white;
+  padding: 16px;
+}
+
+.modal-header h2 {
+  margin: 0 0 4px;
+}
+
+.modal-header p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.modal-body {
+  padding: 16px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+}
+
+.input,
+.select {
+  height: 36px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px;
+}
+
+.btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.cancel {
+  background-color: white;
+  color: #5e3b2c;
+  border: 1px solid #5e3b2c;
+}
+
+.btn.cancel:hover {
+  background-color: #5e3b2c;
+  color: white;
+}
+
+.btn.save {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn.save:disabled {
+  background-color: #9fd7af;
+  cursor: not-allowed;
+}
+
+.btn.save:hover:enabled {
+  background-color: #15803d;
+}

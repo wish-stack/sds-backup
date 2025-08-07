@@ -1,0 +1,59 @@
+/* components/SDSHeader.css */
+
+.sds-header {
+  position: fixed;
+  top: 0;
+  left: 256px; /* equivalent to left-64 in Tailwind */
+  right: 0;
+  height: 64px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
+  z-index: 100;
+}
+
+.sds-header-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px;
+  position: relative;
+}
+
+.dropdown-trigger {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5e3b2c;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chevron {
+  font-size: 12px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: white;
+  border: 1px solid #ccc;
+  width: 180px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.dropdown-item {
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f2f2f2;
+}
